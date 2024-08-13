@@ -5,7 +5,7 @@ import "./Menu.css"
 const Menu = () => {
   const navigate = useNavigate();
   const gotogame =()=>{
-    navigate('/rock-paper-scissor/username')
+    navigate('/username')
   }
   
   return (

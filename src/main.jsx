@@ -5,6 +5,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './index.css'
 import './App.css';
 import Loading from './Components/Loading';
+import UserName from './Components/Username';
 const Menu = lazy(() => import('./Components/Menu'));
 
 
@@ -16,7 +17,15 @@ createRoot(document.getElementById('root')).render(
           path='/'
           element={
             <Suspense fallback={<Loading/>}>
-              <Menu />
+              <Menu/>
+            </Suspense>
+          }
+        />
+    <Route
+          path='/username'
+          element={
+            <Suspense fallback={<Loading/>}>
+              <UserName/>
             </Suspense>
           }
         />

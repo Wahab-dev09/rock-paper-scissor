@@ -1,0 +1,113 @@
+.user-det{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    position: relative;
+}
+.err-btn-box{
+    width: 71%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    height: 27px;
+    padding: 0px 5px;
+    gap: 15px;
+}
+.err-btn-box>span{
+    font-size: 0.7rem;
+    color: rgb(255, 34, 34);
+    font-weight: 600;
+}
+.err-btn-box >button{
+    font-size: 1rem;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 20px -4px inset rgb(255, 138, 239);
+    border: transparent;
+    border-radius: 8px;
+    padding: 3px 15px 4px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    animation: fade-in-bottom 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0s both;
+}
+.bot-img{
+    width: 35%;
+    position: absolute;
+    right: 0;
+    animation: fade-in-right 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+}
+.user-det > span{
+font-size: 1.1rem;
+color: white;
+text-shadow: 0px 0px 10px white;
+font-weight: 700;
+font-family: 'Trebuchet MS';
+animation: fade-in 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) 0s both;
+}
+.field{
+    width: 75%;
+    border: 1px solid rgb(255, 138, 239);
+    box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    padding: 3px 10px;
+    transition: all 0.2s ease-in 0s;
+}
+.field::placeholder{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.637);
+    letter-spacing: 0px;
+    text-shadow:none;
+    font-weight: 700;
+    font-family: 'Trebuchet MS';
+}
+.field:focus{
+    outline: none;
+    box-shadow: 3px 4px 20px -8px rgb(248, 157, 236);
+}
+.field-error{
+    width: 75%;
+    border: 1px solid rgb(255, 16, 16);
+    box-sizing: border-box;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    padding: 3px 10px;
+    transition: all 0.2s ease-in 0s;
+}
+.field-error::placeholder{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.637);
+    letter-spacing: 0px;
+    text-shadow:none;
+    font-weight: 700;
+    font-family: 'Trebuchet MS';
+}
+.field-error:focus{
+    outline: none;
+    box-shadow: 3px 4px 20px -8px rgb(255, 60, 60);
+}
+@media only screen and (max-width:380px){
+    .err-btn-box{
+    height: 35px;
+    }
+}
+@media only screen and (min-width:340px){
+    .bot-img{
+        width: 29%;
+        position: absolute;
+        right: 5%;
+    }
+}
