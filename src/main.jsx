@@ -8,6 +8,7 @@ import Loading from './Components/Loading';
 const Menu = lazy(() => import('./Components/Menu'));
 const UserName = lazy(() => import('./Components/UserName'));
 const Rounds = lazy(() => import('./Components/Rounds'));
+const Rps = lazy(() => import('./Components/Rps'));
 
 
 createRoot(document.getElementById('root')).render(
@@ -35,6 +36,14 @@ createRoot(document.getElementById('root')).render(
           element={
             <Suspense fallback={<Loading/>}>
               <Rounds/>
+            </Suspense>
+          }
+        />
+    <Route
+          path='/rps'
+          element={
+            <Suspense fallback={<Loading/>}>
+              <Rps/>
             </Suspense>
           }
         />
