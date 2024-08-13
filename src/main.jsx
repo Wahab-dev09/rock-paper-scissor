@@ -5,8 +5,9 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './index.css'
 import './App.css';
 import Loading from './Components/Loading';
-import UserName from './Components/Username';
 const Menu = lazy(() => import('./Components/Menu'));
+const UserName = lazy(() => import('./Components/UserName'));
+const Rounds = lazy(() => import('./Components/Rounds'));
 
 
 createRoot(document.getElementById('root')).render(
@@ -26,6 +27,14 @@ createRoot(document.getElementById('root')).render(
           element={
             <Suspense fallback={<Loading/>}>
               <UserName/>
+            </Suspense>
+          }
+        />
+    <Route
+          path='/rounds'
+          element={
+            <Suspense fallback={<Loading/>}>
+              <Rounds/>
             </Suspense>
           }
         />
