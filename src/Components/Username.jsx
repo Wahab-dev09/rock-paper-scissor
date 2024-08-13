@@ -42,7 +42,7 @@ useEffect(() => {
             <form onSubmit={HandleSubmit} className="user-det">
                 <span>Enter your Name</span>
                 <input className={error.username?"field-error":"field"} type="text" placeholder='Your Name' name='username'/>
-                <img fetchpriority='high' decoding='async' className='bot-img' src={import.meta.env.BASE_URL + "/bot2.webp"} alt=""/>
+                <img fetchpriority='high' decoding='async' className='bot-img' src={import.meta.env.BASE_URL + "bot2.webp"} alt=""/>
                 <div className="err-btn-box">
                 <button type='submit' value='submit'>Next</button>
                 <span>{error.username}</span>
