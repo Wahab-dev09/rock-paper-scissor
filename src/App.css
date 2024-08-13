@@ -1,0 +1,28 @@
+@keyframes fade-in-bottom { 0% { transform: translateY(50px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+.menu-fullscreen {
+  width: 100vw;
+  height: 100dvh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: linear-gradient(rgba(235, 235, 235, 0.068) 1.5px, transparent 1.5px), linear-gradient(to right, rgba(235, 235, 235, 0.103) 1.5px, transparent 1.5px);
+  background-size: 10px 10px;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.menu-box {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  box-sizing: border-box;
+  max-height: 760px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}

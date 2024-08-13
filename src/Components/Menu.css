@@ -1,0 +1,128 @@
+.second-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-sizing: border-box;
+    margin-bottom: 15%;
+    position: relative;
+}
+.img1box{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    bottom: -5px;
+    animation: slideleft 0.7s ease-out 0s forwards;
+}
+.img1box>img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    filter: drop-shadow(2px 2px 5px rgb(255, 138, 239));
+}
+.img2box>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: drop-shadow(2px 2px 5px rgb(143, 255, 143));
+}
+.img2box{
+    position: absolute;
+    height: 60px;
+    width: 20%;
+    box-sizing: border-box;
+    padding: 1.5px;
+    animation: slideright 0.7s ease-out 0s forwards;
+    bottom: -5px;
+}
+.second-box > p {
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-family: 'Trebuchet MS';
+    font-display: swap;
+    text-shadow: 0px 0px 8px white;
+    animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.menu-head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.menu-head>img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    height: 40px;
+    position: absolute;
+    bottom: 15px;
+    filter: drop-shadow(0px 0px 10px white);
+    z-index: 0;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.menu-head>span{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 700;
+    font-family: 'Trebuchet MS';
+    font-display: swap;
+    position: relative;
+    z-index: 1;
+}
+.menu-head>span:nth-child(1){
+    animation: fade-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+    text-shadow: 0px 0px 20px rgb(255, 138, 239);
+}
+.menu-head>span:nth-child(1)>span{
+    animation: text-flicker-in-glow 4s linear 1.2s forwards;
+}
+.menu-head>span:nth-child(2){
+    text-shadow: 0px 0px 20px rgb(134, 237, 255);
+    animation: fade-in-right 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.3s both;
+}
+.menu-head>span:nth-child(3){
+    text-shadow: 0px 0px 20px rgb(143, 255, 143);
+    animation: fade-in-bottom 1s cubic-bezier(0.445, 0.050, 0.550, 0.950) 0s both;
+}
+.second-box>button {
+font-size: 1.5rem;
+background-color: transparent;
+box-shadow: 0px 0px 40px -10px rgb(255, 224, 46) inset;
+color: white;
+font-family: 'Trebuchet MS';
+padding: 0.45em 1.5em;
+text-shadow: 0px 0px 10px rgb(255, 233, 108);
+border: transparent;
+align-self: center;
+letter-spacing: 2px;
+font-display: swap;
+border-radius: 10px;
+display: flex;
+align-items: center;
+cursor: pointer;
+gap: 10px;
+animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.second-box>button>svg {filter: drop-shadow(0px 0px 10px rgb(255, 233, 108));animation:tada 2.5s ease infinite}
+@keyframes fade-in-left { 0% { transform: translateX(-50px); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+@keyframes fade-in-right { 0% { transform: translateX(50px); opacity: 0; } 100% { transform: translateX(0); opacity: 1; } }
+@keyframes focus-in-contract-bck { 0% { letter-spacing: 1em; transform: translateZ(300px); filter: blur(12px); opacity: 0; } 100% { transform: translateZ(12px); filter: blur(0); opacity: 1; } }
+@keyframes fade-in-fwd { 0% { transform: scale(0); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+@keyframes slideleft { 0% { left: -27%; } 100% { left: 0px; } }
+@keyframes slideright { 0% { right: -25%; } 100% { right: 0px; } }
+@keyframes text-flicker-in-glow{0%{opacity:0}10%{opacity:0;text-shadow:none}10.1%{opacity:1;text-shadow:none}10.2%{opacity:0;text-shadow:none}20%{opacity:0;text-shadow:none}20.1%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239);}20.6%{opacity:0;text-shadow:none}30%{opacity:0;text-shadow:none}30.1%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239),0 0 20px rgb(255, 138, 239)}30.5%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}30.6%{opacity:0;text-shadow:none}45%{opacity:0;text-shadow:none}45.1%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}50%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}55%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}55.1%{opacity:0;text-shadow:none}57%{opacity:0;text-shadow:none}57.1%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}60%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}60.1%{opacity:0;text-shadow:none}65%{opacity:0;text-shadow:none}65.1%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}75%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}75.1%{opacity:0;text-shadow:none}77%{opacity:0;text-shadow:none}77.1%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}85%{opacity:1;text-shadow: 0px 0px 20px rgb(255, 138, 239)}85.1%{opacity:0;text-shadow:none}86%{opacity:0;text-shadow:none}86.1%{opacity:1;text-shadow:0 0 20px rgb(255, 138, 239)}100%{opacity:1;text-shadow:0 0 20px rgb(255, 138, 239)}}
+@keyframes tada { from { -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); } 10%, 20% { -webkit-transform: scale3d(.95,.95,.95) rotate3d(0,0,1,-10deg); transform: scale3d(.95,.95,.95) rotate3d(0,0,1,-10deg); } 30%, 50%, 70%, 90% { -webkit-transform: scale3d(1,1,1) rotate3d(0,0,1,10deg); transform: scale3d(1,1,1) rotate3d(0,0,1,10deg); } 40%, 60%, 80% { -webkit-transform: rotate3d(0,0,1,-10deg); transform: rotate3d(0,0,1,-10deg); } to { -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); } }
+@keyframes fade-in-bottom { 0% { transform: translateY(50px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+@media only screen and (min-width:350px) {
+    .img1box{animation: slideleft 0.7s ease-out 0s forwards;}
+    .img2box{animation: slideright 0.7s ease-out 0s forwards;}
+    @keyframes slideleft {0%{left: -27%;}100%{left: 5%;}}
+    @keyframes slideright {0%{right: -25%;}100%{right: 5%;}}
+}
