@@ -10,7 +10,7 @@ This Rock-Paper-Scissors game is built using React and features several pages th
 
 The starting point of the game, where users can navigate to the username page.
 
-**File**: `Menu.js`
+**File**: `Menu.jsx`
 
 **Features**:
 - Displays the game title and an image.
@@ -22,7 +22,7 @@ The starting point of the game, where users can navigate to the username page.
 
 A page where users can enter their username, with validation included.
 
-**File**: `UserName.js`
+**File**: `UserName.jsx`
 
 **Features**:
 - Input field for the username with validation.
@@ -36,7 +36,7 @@ A page where users can enter their username, with validation included.
 
 Allows users to select the number of rounds for the game.
 
-**File**: `Rounds.js`
+**File**: `Rounds.jsx`
 
 **Features**:
 - Options to choose between 3, 5, or 7 rounds.
@@ -49,7 +49,7 @@ Allows users to select the number of rounds for the game.
 
 The main gameplay page where users engage in Rock-Paper-Scissors.
 
-**File**: `Rps.js`
+**File**: `Rps.jsx`
 
 **Features**:
 - Users can choose between rock, paper, or scissors.
@@ -64,7 +64,7 @@ The main gameplay page where users engage in Rock-Paper-Scissors.
 
 Handles unmatched routes and redirects users to the home page.
 
-**File**: `App.js`
+**File**: `App.jsx`
 
 **Features**:
 - Displays when users navigate to routes that do not match any defined paths.
