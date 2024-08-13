@@ -27,3 +27,35 @@
   align-items: flex-start;
   gap: 30px;
 }
+.fh1{
+  color: white;
+  font-display: swap;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.fh1>h1{
+  color: rgb(255, 90, 90);
+  font-display: swap;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.fh1>svg{
+  filter: drop-shadow(0px 0px 5px rgb(238, 238, 238));
+}
+.menu-box>p{
+  color: rgb(201, 201, 201);
+  font-display: swap;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.fbtn{
+  font-size: 1rem;
+  background-color: grey;
+  color: white;
+  font-display: swap;
+  font-family: 'Trebuchet MS', sans-serif;
+  border: transparent;
+  padding: 0.4em 0.8em;
+  border-radius: 5px;
+  cursor: pointer;
+}
