@@ -1,5 +1,11 @@
 # Rock-Paper-Scissors Game
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/33980718-3a99-4223-a448-059add6cb9d4" alt="RPS Game Screenshot 1" width="30%" />
+  <img src="https://github.com/user-attachments/assets/08129c89-53b5-4ce2-806f-c051353dd78a" alt="RPS Game Screenshot 2" width="30%" />
+  <img src="https://github.com/user-attachments/assets/c384b313-2195-40aa-b8b4-14a12b5d8583" alt="RPS Game Screenshot 3" width="30%" />
+</p>
+
 ## Overview
 
 This Rock-Paper-Scissors game is built using React and features several pages that guide the user through the game. Users can select the number of rounds, enter their username, and play the game. The application includes lazy-loaded components to optimize performance and uses session storage to persist user data across different pages.
