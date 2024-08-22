@@ -1,9 +1,9 @@
 # Rock-Paper-Scissors Game
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/33980718-3a99-4223-a448-059add6cb9d4" alt="RPS Game Screenshot 1" width="30%" />
-  <img src="https://github.com/user-attachments/assets/08129c89-53b5-4ce2-806f-c051353dd78a" alt="RPS Game Screenshot 2" width="30%" />
-  <img src="https://github.com/user-attachments/assets/c384b313-2195-40aa-b8b4-14a12b5d8583" alt="RPS Game Screenshot 3" width="30%" />
+  <img src="https://github.com/user-attachments/assets/33980718-3a99-4223-a448-059add6cb9d4" alt="RPS Game Screenshot 1" width="31%" />
+  <img src="https://github.com/user-attachments/assets/08129c89-53b5-4ce2-806f-c051353dd78a" alt="RPS Game Screenshot 2" width="31%" />
+  <img src="https://github.com/user-attachments/assets/c384b313-2195-40aa-b8b4-14a12b5d8583" alt="RPS Game Screenshot 3" width="31%" />
 </p>
 
 ## Overview
